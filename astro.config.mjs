@@ -5,6 +5,8 @@ import analogjsangular from '@analogjs/astro-angular';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://ElenaMazyrina.github.io',
+  base: 'my-portfolio',
   integrations: [analogjsangular({
     vite: {
       inlineStylesExtension: 'scss|sass|less'
