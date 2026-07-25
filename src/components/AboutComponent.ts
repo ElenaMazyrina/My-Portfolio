@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     standalone: true,
     template: `
     <div>
-      Beat it!!!
+      Папка, пошли пить кофе?
     </div>
   `
 })
