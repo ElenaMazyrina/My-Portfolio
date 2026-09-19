@@ -1,0 +1,37 @@
+:root {
+    --blue:     #1A30CC;
+    --sun:      #FAC800;
+    --teal:     #0FAD7A;
+    --ink:      #14100A;
+    --gray:     #908A82;
+    --muted:    #C8C0B4;
+    --bg:       #FAFAF5;
+    --card:     #FFFFFF;
+    --text:     #3A3028;
+    --stackBg:  #FAC800;
+    --stackInk: #14100A;
+}
+
+/* Автоматическое переключение на темную тему на основе настроек ОС */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --blue:     #6B8FFF;
+        --sun:      #FAC800;
+        --teal:     #22DCA0;
+        --ink:      #F0E8D8;
+        --gray:     #90887C;
+        --muted:    #38302A;
+        --bg:       #131008;
+        --card:     #1E1810;
+        --text:     #C8B89A;
+        --stackBg:  #1E1400;
+        --stackInk: #FAC800;
+    }
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
