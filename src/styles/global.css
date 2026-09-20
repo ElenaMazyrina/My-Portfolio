@@ -58,6 +58,13 @@ body {
     font-family: var(--font-body);
     color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding: var(--page-padding);
 }
 
+h1 {
+    font-family: var(--font-display);
+    font-size: 66px;
+    font-weight: 800;
+    color: var(--color-blue);
+}
 
