@@ -1,37 +1,63 @@
+/* Colors */
 :root {
-    --blue:     #1A30CC;
-    --sun:      #FAC800;
-    --teal:     #0FAD7A;
-    --ink:      #14100A;
-    --gray:     #908A82;
-    --muted:    #C8C0B4;
-    --bg:       #FAFAF5;
-    --card:     #FFFFFF;
-    --text:     #3A3028;
-    --stackBg:  #FAC800;
-    --stackInk: #14100A;
+    --color-blue: #1a30cc;
+    --color-yellow: #fac800;
+    --color-teal: #0fad7a;
+    --color-gray: #908a82;
+    --color-bg: #fafaf5;
+    --color-card: #ffffff;
+    --color-text: #3a3028;
+    --color-ink: #14100a;
+    --color-muted: #c8c0b4;
 }
 
 /* Автоматическое переключение на темную тему на основе настроек ОС */
 @media (prefers-color-scheme: dark) {
     :root {
-        --blue:     #6B8FFF;
-        --sun:      #FAC800;
-        --teal:     #22DCA0;
-        --ink:      #F0E8D8;
-        --gray:     #90887C;
-        --muted:    #38302A;
-        --bg:       #131008;
-        --card:     #1E1810;
-        --text:     #C8B89A;
-        --stackBg:  #1E1400;
-        --stackInk: #FAC800;
+        --color-blue:  #6B8FFF;
+        --color-yellow: #FAC800;
+        ---color-teal:  #22DCA0;
+        --color-gray: #90887C;
+        --color-bg: #131008;
+        --color-card: #1E1810;
+        --color-text: #C8B89A;
+        --color-ink: #F0E8D8;
+        --color-muted: #38302A;
+
+        /*--stackBg:  #1E1400;*/
+        /*--stackInk: #FAC800;*/
     }
 }
 
+:root {
+    /* Typography */
+    --font-body: 'Nunito', sans-serif;
+    --font-display: 'Bricolage Grotesque', sans-serif;
+
+    --text-xs: 0.7rem;
+    --text-sm: 0.8rem;
+    --text-base: 0.94rem;
+    --text-lg: 1.1rem;
+
+    /* Layout */
+    --content-width: 880px;
+    --page-padding: 36px;
+
+    /* Radius */
+    --radius-sm: 9px;
+    --radius-md: 13px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+
+    /* Shadows */
+    --shadow-card: 0 8px 32px rgb(0 0 0 / 10%);
+}
+
 body {
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
