@@ -1,5 +1,5 @@
 /* Colors */
-:root {
+:root[data-theme="light"] {
     --color-blue: #1a30cc;
     --color-yellow: #fac800;
     --color-teal: #0fad7a;
@@ -9,24 +9,22 @@
     --color-text: #3a3028;
     --color-ink: #14100a;
     --color-muted: #c8c0b4;
+    --toggle-dark-theme-btn-display: block;
+    --toggle-light-theme-btn-display: none;
 }
 
-/* Автоматическое переключение на темную тему на основе настроек ОС */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-blue:  #6B8FFF;
-        --color-yellow: #FAC800;
-        ---color-teal:  #22DCA0;
-        --color-gray: #90887C;
-        --color-bg: #131008;
-        --color-card: #1E1810;
-        --color-text: #C8B89A;
-        --color-ink: #F0E8D8;
-        --color-muted: #38302A;
-
-        /*--stackBg:  #1E1400;*/
-        /*--stackInk: #FAC800;*/
-    }
+:root[data-theme="dark"] {
+    --color-blue:  #6B8FFF;
+    --color-yellow: #FAC800;
+    ---color-teal:  #22DCA0;
+    --color-gray: #90887C;
+    --color-bg: #131008;
+    --color-card: #1E1810;
+    --color-text: #C8B89A;
+    --color-ink: #F0E8D8;
+    --color-muted: #38302A;
+    --toggle-dark-theme-btn-display: none;
+    --toggle-light-theme-btn-display: block;
 }
 
 :root {

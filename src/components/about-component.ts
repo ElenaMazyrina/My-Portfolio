@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, inject, type OnInit} from '@angular/core';
 import {ThemeToggleComponent} from "./theme-toggle/theme-toggle-component.ts";
+import {ThemeService} from "../services/ThemeService.ts";
 
 @Component({
     selector: 'app-about',
@@ -7,5 +8,10 @@ import {ThemeToggleComponent} from "./theme-toggle/theme-toggle-component.ts";
     templateUrl: './about-component.html',
     imports: [ ThemeToggleComponent ]
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+    private readonly themeService: ThemeService = inject(ThemeService);
+
+    ngOnInit(): void {
+        this.themeService.init();
+    }
 }

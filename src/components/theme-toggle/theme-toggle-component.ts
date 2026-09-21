@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {ThemeEnum, ThemeService} from "../../services/ThemeService.ts";
 
 @Component({
   selector: 'app-theme-toggle',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   standalone: true,
 })
 export class ThemeToggleComponent {
+  private readonly themeService: ThemeService = inject(ThemeService);
 
+  toggleLightTheme(): void {
+    this.themeService.setTheme(ThemeEnum.LIGHT);
+  }
+
+  toggleDarkTheme(): void {
+    this.themeService.setTheme(ThemeEnum.DARK);
+  }
 }

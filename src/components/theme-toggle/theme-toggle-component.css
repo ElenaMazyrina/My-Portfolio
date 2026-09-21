@@ -10,25 +10,16 @@
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.10);
 }
 
+
 .theme-toggle-text {
-
+    color: var(--color-ink);
 }
 
-.theme-toggle-text-to-dark {
-    display: block;
+.theme-toggle-dark {
+    display: var(--toggle-dark-theme-btn-display);
 }
 
-.theme-toggle-text-to-light {
-    display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-    .theme-toggle-text-to-dark {
-        display: none;
-    }
-
-    .theme-toggle-text-to-light {
-        display: block;
-    }
+.theme-toggle-light {
+    display: var(--toggle-light-theme-btn-display);
 }
 
