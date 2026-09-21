@@ -1,0 +1,34 @@
+.theme-toggle-btn {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 999px;
+    border: 2px solid var(--color-muted);
+    background: var(--color-card);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.10);
+}
+
+.theme-toggle-text {
+
+}
+
+.theme-toggle-text-to-dark {
+    display: block;
+}
+
+.theme-toggle-text-to-light {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-toggle-text-to-dark {
+        display: none;
+    }
+
+    .theme-toggle-text-to-light {
+        display: block;
+    }
+}
+
