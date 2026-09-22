@@ -1,0 +1,25 @@
+.header {
+
+}
+
+.header-name {
+    width: 472px;
+    height: 114px;
+    border-radius: 0 0 0 110px;
+    background: #FAC800;
+
+    font-size: 146px;
+    font-style: normal;
+    font-weight: 800;
+    color: #14100a;
+}
+
+.header-surname {
+    font-size: 120px;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+}

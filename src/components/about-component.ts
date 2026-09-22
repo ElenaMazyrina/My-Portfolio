@@ -6,6 +6,7 @@ import {ThemeService} from "../services/ThemeService.ts";
     selector: 'app-about',
     standalone: true,
     templateUrl: './about-component.html',
+    styleUrls: ['./about-component.css'],
     imports: [ ThemeToggleComponent ]
 })
 export class AboutComponent implements OnInit {
