@@ -1,1 +1,12 @@
-<p>pill-component works!</p>
+@if (pillColor() === 'blue') {
+    <div class="pill pill-blue">
+        {{ pillText() }}
+    </div>
+} @else {
+    <div class="pill pill-green">
+    {{ pillText() }}
+    </div>
+}
+
+
+

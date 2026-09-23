@@ -1,0 +1,15 @@
+.pill {
+    padding: 6px 18px;
+    border-radius: 999px;
+    color: #FFF;
+    min-width: 160px;
+}
+
+.pill-blue {
+    background-color: var(--color-blue);
+}
+
+.pill-green {
+    background-color: var(--color-teal);
+
+}

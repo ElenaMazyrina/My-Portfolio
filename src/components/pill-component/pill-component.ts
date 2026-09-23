@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, input, type InputSignal} from '@angular/core';
+import {PillColorEnum} from "../pill-color-enum.ts";
+
 
 @Component({
   selector: 'app-pill-component',
@@ -8,5 +10,6 @@ import { Component } from '@angular/core';
   standalone: true,
 })
 export class PillComponent {
-
+  public pillText: InputSignal<string> = input('');
+  public pillColor = input(PillColorEnum.BLUE);
 }
