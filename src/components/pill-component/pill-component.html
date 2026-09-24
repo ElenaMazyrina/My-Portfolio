@@ -1,12 +1,6 @@
-@if (pillColor() === 'blue') {
-    <div class="pill pill-blue">
-        {{ pillText() }}
-    </div>
-} @else {
-    <div class="pill pill-green">
-    {{ pillText() }}
-    </div>
-}
+<div class="pill" [ngClass]="pillColor() === 'green' ? 'pill-green' :'pill-blue'">
+    <ng-content></ng-content>
+</div>
 
 
 

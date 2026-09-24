@@ -13,6 +13,8 @@
     </h1>
     <app-theme-toggle class="theme-toggle"></app-theme-toggle>
 
-    <app-pill-component pillText="Frontend Developer"></app-pill-component>
-    <app-pill-component pillText="6 лет опыта" [pillColor]="pillColor.GREEN"></app-pill-component>
+    <app-pill-component>Frontend Developer</app-pill-component>
+    <app-pill-component [pillColor]="pillColor.GREEN">6 лет опыта</app-pill-component>
+    <app-outline-pill-component>Frontend Developer</app-outline-pill-component>
+    <app-outline-pill-component [pillColor]="pillColor.GREEN">6 лет опыта</app-outline-pill-component>
 </div>

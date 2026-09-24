@@ -1,0 +1,16 @@
+.outline-pill {
+    padding: 3px 14px;
+    border-radius: 999px;
+    min-width: 160px;
+    height: 28px;
+}
+
+.outline-pill-blue {
+    color: 2px solid var(--color-blue);
+    border: 2px solid var(--color-blue);
+}
+
+.outline-pill-green {
+    color: var(--color-teal);
+    border: 2px solid var(--color-teal);
+}
