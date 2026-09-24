@@ -45,7 +45,7 @@
     --radius-sm: 9px;
     --radius-md: 13px;
     --radius-lg: 20px;
-    --radius-pill: 999px;
+    --radius-pill: 999px; // TODO: change in component styles
 
     /* Shadows */
     --shadow-card: 0 8px 32px rgb(0 0 0 / 10%);
@@ -60,7 +60,7 @@ body {
     font-family: var(--font-body);
     color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
-            padding: 0 var(--page-padding) 88px var(--page-padding);
+    padding: 0 var(--page-padding) 88px var(--page-padding);
     display: flex;
 }
 
