@@ -4,13 +4,14 @@ import {ThemeService} from "../services/ThemeService.ts";
 import {PillComponent} from "./pill-component/pill-component.ts";
 import {PillColorEnum} from "./pill-color-enum.ts";
 import {OutlinePillComponent} from "./outline-pill-component/outline-pill-component.ts";
+import {PhotoCard} from "./photo-card/photo-card.ts";
 
 @Component({
     selector: 'app-about',
     standalone: true,
     templateUrl: './about-component.html',
     styleUrls: ['./about-component.css'],
-    imports: [ ThemeToggleComponent, PillComponent, OutlinePillComponent ]
+    imports: [ ThemeToggleComponent, PillComponent, OutlinePillComponent, PhotoCard ]
 })
 export class AboutComponent implements OnInit {
     private readonly themeService: ThemeService = inject(ThemeService);

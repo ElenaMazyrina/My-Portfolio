@@ -70,6 +70,7 @@
 
 .introduction {
     display: flex;
+    gap: 52px;
 }
 
 .introduction-title {
@@ -83,6 +84,7 @@
 
 .introduction-text {
   width: 60%;
+  padding-right: 40px;
 }
 
 .introduction-name {

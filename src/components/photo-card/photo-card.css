@@ -1,0 +1,5 @@
+.photo-card-hat {
+    height: 10px;
+    background: var(--color-yellow);
+    border-radius: 999px 999px 0 0;
+}
