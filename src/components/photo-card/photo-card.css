@@ -1,5 +1,39 @@
+.photo-card {
+    width: 210px;
+}
+
 .photo-card-hat {
     height: 10px;
     background: var(--color-yellow);
-    border-radius: 999px 999px 0 0;
+    border-radius: 18px 18px 0 0;
+}
+
+.photo-card-img {
+    display: block;
+    height: 210px;
+}
+
+.photo-card-text {
+    padding: 14px 16px 18px 16px;
+    background: var(--color-muted);
+    border-radius: 0 0 18px 18px;
+}
+
+.photo-card-text-item {
+    color: var(--color-gray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.photo-card-text-item + .photo-card-text-item {
+    margin-top: 3px;
+}
+
+.photo-card-text-name {
+    color: var(--color-ink);
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }

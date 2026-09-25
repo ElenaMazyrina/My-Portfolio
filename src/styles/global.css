@@ -60,13 +60,15 @@ body {
     font-family: var(--font-body);
     color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 100px;
     padding: 0 var(--page-padding) 88px var(--page-padding);
     display: flex;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var(--font-display), sans-serif;
     color: var(--color-blue);
 }
