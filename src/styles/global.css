@@ -45,7 +45,7 @@
     --radius-sm: 9px;
     --radius-md: 13px;
     --radius-lg: 20px;
-    --radius-pill: 999px; // TODO: change in component styles
+    --radius-pill: 999px;
 
     /* Shadows */
     --shadow-card: 0 8px 32px rgb(0 0 0 / 10%);
