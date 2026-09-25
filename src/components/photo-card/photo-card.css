@@ -1,11 +1,13 @@
 .photo-card {
     width: 210px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    overflow: hidden;
 }
 
 .photo-card-hat {
     height: 10px;
     background: var(--color-yellow);
-    border-radius: 18px 18px 0 0;
 }
 
 .photo-card-img {
@@ -15,8 +17,7 @@
 
 .photo-card-text {
     padding: 14px 16px 18px 16px;
-    background: var(--color-muted);
-    border-radius: 0 0 18px 18px;
+    background: var(--color-card);
 }
 
 .photo-card-text-item {
