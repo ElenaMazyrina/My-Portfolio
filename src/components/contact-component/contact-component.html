@@ -1,0 +1,20 @@
+<div class="contact">
+    <ng-content select="contact-icon" />
+    @switch (contactType()) {
+        @case (contactTypeEnum.CLICK) {
+            <a [href]="contact()">
+                {{ contact() }}
+            </a>
+        }
+        @case (contactTypeEnum.MAIL) {
+            <a [href]="`mailto:${contact()}`">
+                {{ contact() }}
+            </a>
+        }
+        @default {
+            <div (click)="copy()">{{ contact() }}</div>
+        }
+    }
+</div>
+
+

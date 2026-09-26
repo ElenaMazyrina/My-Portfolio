@@ -33,5 +33,16 @@
         <div>
             <app-photo-card></app-photo-card>
         </div>
+        <div>
+            <app-contact [contactType]="contactTypeEnum.MAIL" contact="elena@frontend.dev">
+                <div ngProjectAs="contact-icon">✉️</div>
+            </app-contact>
+            <app-contact [contactType]="contactTypeEnum.CLICK" contact="linkedin.com/in/elena-m">
+                <div ngProjectAs="contact-icon">🔗</div>
+            </app-contact>
+            <app-contact contact="github.com/elena-dev">
+                <div ngProjectAs="contact-icon">🐙</div>
+            </app-contact>
+        </div>
     </section>
 </div>
