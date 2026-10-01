@@ -1,5 +1,6 @@
-import {Component, input, type InputSignal} from '@angular/core';
+import {Component, inject, input} from '@angular/core';
 import {ContactTypeEnum} from "./ContactTypeEnum.ts";
+import {ToastService} from "../../services/toast-service.ts";
 
 @Component({
   selector: 'app-contact',
@@ -10,10 +11,12 @@ import {ContactTypeEnum} from "./ContactTypeEnum.ts";
 export class ContactComponent {
   contactType = input(ContactTypeEnum.COPY);
   contact = input('');
+  private readonly toastService = inject(ToastService);
 
   protected contactTypeEnum = ContactTypeEnum;
 
   public async copy(): Promise<void> {
     await navigator.clipboard.writeText(this.contact());
+    this.toastService.success(this.contact());
   }
 }
