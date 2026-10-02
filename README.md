@@ -45,3 +45,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## 👀 Sources:
 [dev.to](https://dev.to/paulmojicatech/using-angular-inside-of-astro-2go9) 
+
+## 👀 to deploy:
+just push to the git repository 
