@@ -20,6 +20,7 @@ export class ToastService {
     public readonly toastObservable = this.toast$.asObservable();
 
     public success(message: string): void {
+        console.log(message);
         this.toast$.next({type: ToastType.Success, message});
     }
 

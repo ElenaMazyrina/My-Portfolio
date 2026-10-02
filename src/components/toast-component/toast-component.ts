@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {ToastService} from "../../services/toast-service.ts";
-import {concat, map, Observable, of, startWith, switchMap, tap, timer} from "rxjs";
+import {concat, map, Observable, of, switchMap, timer} from "rxjs";
 import {AsyncPipe} from "@angular/common";
 
 @Component({
@@ -11,6 +11,7 @@ import {AsyncPipe} from "@angular/common";
 })
 export class ToastComponent {
   private readonly toastService = inject(ToastService);
+
   protected isVisible$: Observable<boolean> = this.toastService.toastObservable.pipe(
       switchMap(() =>
           concat(
@@ -18,5 +19,9 @@ export class ToastComponent {
               timer(3000).pipe(map(() => false))
           )
       ),
-  )
+  );
+
+  protected message$ = this.toastService.toastObservable.pipe(
+      map(({message}) => message),
+  );
 }

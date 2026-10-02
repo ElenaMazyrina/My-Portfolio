@@ -1,9 +1,11 @@
 @let isVisible = isVisible$ | async;
-{{ isVisible }}
+@let message = message$ | async;
 
 @if (isVisible) {
-    {{ isVisible }}
-    <p>toast-component works!</p>
+    <div class="toast">
+        <div>✅</div>
+        <div>Скопировано {{ message }}</div>
+    </div>
 }
 
 
