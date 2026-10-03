@@ -28,25 +28,18 @@
                 Меня зовут <b class="introduction-name">Елена</b>.
                 Более 6 лет работаю разработчиком и имею большой опыт создания и поддержки веб-приложений на Angular как для российского рынка, так и для зарубежного.
             </p>
-            <p>Очень люблю❤️ Angular и слежу за активным развитием этого фреймворка.<br>Но с большим удовольствием изучаю новые фреймворки, технологии, языки. </p>
+            <p>Очень люблю❤️ Angular и слежу за активным развитием этого фреймворка.<br>Но с большим удовольствием изучаю и новые фреймворки, технологии, языки. </p>
+            <div class="contacts">
+                <app-contact [contactType]="contactTypeEnum.MAIL" contact="elena@frontend.dev" contactIcon="✉️" />
+                <app-contact [contactType]="contactTypeEnum.CLICK" contact="linkedin.com/in/elena-m" contactIcon="🔗" />
+                <app-contact contact="github.com/elena-dev" contactIcon="🐙" />
+                <app-contact contact="@elenaMazyrina" contactIcon="✍️" />
+            </div>
         </div>
         <div>
             <app-photo-card></app-photo-card>
         </div>
-        <div>
-            <app-contact [contactType]="contactTypeEnum.MAIL" contact="elena@frontend.dev">
-                <div ngProjectAs="contact-icon">✉️</div>
-            </app-contact>
-            <app-contact [contactType]="contactTypeEnum.CLICK" contact="linkedin.com/in/elena-m">
-                <div ngProjectAs="contact-icon">🔗</div>
-            </app-contact>
-            <app-contact contact="github.com/elena-dev">
-                <div ngProjectAs="contact-icon">🐙</div>
-            </app-contact>
-            <app-contact contact="@elenaMazyrina">
-                <div ngProjectAs="contact-icon">✍️</div>
-            </app-contact>
-        </div>
     </section>
+    <div class="divider"></div>
     <app-toast></app-toast>
 </div>

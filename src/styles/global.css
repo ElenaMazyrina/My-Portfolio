@@ -78,3 +78,27 @@ h1 {
     font-weight: 800;
 }
 
+a:link {
+    color: var(--color-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--color-yellow);
+    text-underline-offset: 3px;
+    transition: color 0.18s ease, text-decoration-color 0.18s ease;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #7B5EA7;
+    text-decoration-color: var(--color-muted);
+}
+
+a:hover {
+    color: var(--color-teal);
+    text-decoration-color: var(--color-teal);
+    text-decoration-thickness: 2px;
+}
+
+a:active {
+    color: var(--color-yellow);
+    text-decoration-color: var(--color-blue);
+}

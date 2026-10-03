@@ -1,5 +1,5 @@
 <div class="contact">
-    <ng-content select="contact-icon" />
+    <div class="contact-icon">{{ contactIcon() }}</div>
     @switch (contactType()) {
         @case (contactTypeEnum.CLICK) {
             <a [href]="contact()">
@@ -12,7 +12,10 @@
             </a>
         }
         @default {
-            <div (click)="copy()">{{ contact() }}</div>
+            <div>
+                <div (click)="copy()">{{ contact() }}</div>
+            </div>
         }
     }
 </div>
+
