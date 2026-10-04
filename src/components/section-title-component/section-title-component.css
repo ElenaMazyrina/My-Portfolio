@@ -1,0 +1,8 @@
+.title-text {
+    text-transform: uppercase;
+    color: var(--color-gray);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 2px;
+}

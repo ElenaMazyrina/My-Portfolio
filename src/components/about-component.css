@@ -98,3 +98,8 @@
     gap: 10px;
 }
 
+.prof-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}

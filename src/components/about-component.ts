@@ -8,13 +8,22 @@ import {PhotoCardComponent} from "./photo-card-component/photo-card-component.ts
 import {ContactComponent} from "./contact-component/contact-component.ts";
 import {ContactTypeEnum} from "./contact-component/ContactTypeEnum.ts";
 import {ToastComponent} from "./toast-component/toast-component.ts";
+import {ProfExperienceSectionComponent} from "./prof-experience-section-component/prof-experience-section-component.ts";
 
 @Component({
     selector: 'app-about',
     standalone: true,
     templateUrl: './about-component.html',
     styleUrls: ['./about-component.css'],
-    imports: [ ThemeToggleComponent, PillComponent, OutlinePillComponent, PhotoCardComponent, ContactComponent, ToastComponent ]
+    imports: [
+        ThemeToggleComponent,
+        PillComponent,
+        OutlinePillComponent,
+        PhotoCardComponent,
+        ContactComponent,
+        ToastComponent,
+        ProfExperienceSectionComponent,
+    ]
 })
 export class AboutComponent implements OnInit {
     private readonly themeService: ThemeService = inject(ThemeService);
