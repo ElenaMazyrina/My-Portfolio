@@ -1,7 +1,13 @@
-.title-text {
+.section-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.section-title-text {
     text-transform: uppercase;
     color: var(--color-gray);
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 2px;
