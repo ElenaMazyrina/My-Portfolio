@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.section-title-star {
+    margin-bottom: 4px;
+}
+
 .section-title-text {
     text-transform: uppercase;
     color: var(--color-gray);
