@@ -9,6 +9,8 @@ import {ContactComponent} from "./contact-component/contact-component.ts";
 import {ContactTypeEnum} from "./contact-component/ContactTypeEnum.ts";
 import {ToastComponent} from "./toast-component/toast-component.ts";
 import {ProfExperienceSectionComponent} from "./prof-experience-section-component/prof-experience-section-component.ts";
+import {EducationComponent} from "./education-component/education-component.ts";
+import {StackComponent} from "./stack-component/stack-component.ts";
 
 @Component({
     selector: 'app-about',
@@ -23,6 +25,8 @@ import {ProfExperienceSectionComponent} from "./prof-experience-section-componen
         ContactComponent,
         ToastComponent,
         ProfExperienceSectionComponent,
+        EducationComponent,
+        StackComponent,
     ]
 })
 export class AboutComponent implements OnInit {

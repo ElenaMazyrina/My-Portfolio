@@ -102,4 +102,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    gap: var(--prof-details-item-gap);
+}
+
+.prof-details-item {
+    width: calc((100% - var(--prof-details-item-gap)) / 2);
 }
