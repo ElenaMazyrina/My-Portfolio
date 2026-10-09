@@ -6,6 +6,7 @@ import {SectionTitleComponent, SectionTitleStar} from "../section-title-componen
   imports: [SectionTitleComponent],
   templateUrl: './prof-experience-section-component.html',
   styleUrl: './prof-experience-section-component.css',
+  standalone: true,
 })
 export class ProfExperienceSectionComponent {
   protected sectionTitleStar = SectionTitleStar;
