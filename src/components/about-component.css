@@ -108,3 +108,52 @@
 .prof-details-item {
     width: calc((100% - var(--prof-details-item-gap)) / 2);
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.footer-deco {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+}
+
+.footer-dot-blue {
+    background: var(--color-blue);
+}
+
+.footer-dot-yellow {
+    background: var(--color-yellow);
+}
+
+.footer-dot-green {
+    background: var(--color-teal);
+}
+
+.footer-contact {
+    color: var(--color-gray);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
