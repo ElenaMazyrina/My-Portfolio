@@ -8,16 +8,20 @@
         <img class="decorative-img decorative-image-green-dot-9" src="/My-Portfolio/green-dot-9.svg" alt="green decorative dot" />
 
         <h1>
-            <span class="header-name">Елена</span>
-            <br>
-            <span class="header-surname">Мазырина</span>
+            <div class="header-name-title">
+                <div class="header-name">Елена</div>
+                <div class="header-title">
+                    <app-pill-component class="header-title-item">Frontend Developer</app-pill-component>
+                    <app-pill-component class="header-title-item" [pillColor]="pillColor.GREEN">6 лет опыта</app-pill-component>
+                </div>
+            </div>
+            <div class="header-surname">Мазырина</div>
         </h1>
-        <app-theme-toggle class="theme-toggle"></app-theme-toggle>
+        <div class="header-intro">
+        </div>
 
-        <app-pill-component>Frontend Developer</app-pill-component>
-        <app-pill-component [pillColor]="pillColor.GREEN">6 лет опыта</app-pill-component>
-        <app-outline-pill-component>Frontend Developer</app-outline-pill-component>
-        <app-outline-pill-component [pillColor]="pillColor.GREEN">6 лет опыта</app-outline-pill-component>
+
+
     </section>
     <div class="divider"></div>
     <section class="introduction">
@@ -65,3 +69,4 @@
     </section>
     <app-toast></app-toast>
 </div>
+<app-theme-toggle class="theme-toggle"></app-theme-toggle>
