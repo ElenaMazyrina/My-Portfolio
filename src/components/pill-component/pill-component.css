@@ -3,6 +3,8 @@
     border-radius: 999px;
     color: #FFF;
     min-width: 160px;
+    font-size: 0.8rem;
+   justify-content: flex-start;
 }
 
 .pill-blue {
@@ -11,5 +13,4 @@
 
 .pill-green {
     background-color: var(--color-teal);
-
 }

@@ -62,9 +62,15 @@ body {
     font-family: var(--font-body);
     color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0 100px;
+    margin: 0;
     padding: 52px var(--page-padding) 88px var(--page-padding);
     display: flex;
+
+    @media (min-width: 600px) {
+        body {
+            margin: 0 100px;
+        }
+    }
 }
 
 h1,

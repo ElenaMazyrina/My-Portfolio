@@ -49,15 +49,14 @@
 .header-name {
     border-radius: 0 0 0 110px;
     background: var(--color-yellow);
-
-    font-size: 143px;
+    font-size: clamp(4rem, 13vw, 9rem);
     font-style: normal;
     font-weight: 800;
     color: #131008;
 }
 
 .header-surname {
-    font-size: 120px;
+    font-size: clamp(3rem, 11vw, 7.5rem);
 }
 
 .theme-toggle {
@@ -70,6 +69,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .header-title {
@@ -83,6 +83,12 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+}
+
+@media (min-width: 600px) {
+    .header-title {
+        flex-basis: auto;
+    }
 }
 
 
