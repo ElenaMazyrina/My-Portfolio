@@ -65,11 +65,11 @@ body {
     margin: 0;
     padding: 52px var(--page-padding) 88px var(--page-padding);
     display: flex;
+}
 
-    @media (min-width: 600px) {
-        body {
-            margin: 0 100px;
-        }
+@media (min-width: 600px) {
+    body {
+        margin: 0 100px;
     }
 }
 

@@ -94,21 +94,41 @@
 
 .introduction {
     display: flex;
+    flex-direction: column;
     gap: 52px;
+}
+
+@media (min-width: 600px) {
+    .introduction {
+        flex-direction: row;
+    }
 }
 
 .introduction-title {
     margin: 0;
-    margin-bottom: 8px;
-    font-size: 64px;
+    margin-bottom: 0;
+    font-size: clamp(2.8rem, 6vw, 4rem);
     font-style: normal;
     font-weight: 800;
     line-height: 64px;
 }
 
+@media (min-width: 600px) {
+    .introduction-title {
+        margin-bottom: 8px;
+    }
+}
+
 .introduction-text {
-  width: 60%;
-  padding-right: 40px;
+    width: 100%;
+    padding-right: 0;
+}
+
+@media (min-width: 600px) {
+    .introduction-text {
+        width: 60%;
+        padding-right: 40px;
+    }
 }
 
 .introduction-name {
@@ -124,18 +144,34 @@
 
 .prof-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    gap: var(--prof-details-item-gap);
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .prof-details {
+        flex-direction: row;
+        gap: var(--prof-details-item-gap);
+    }
+
 }
 
 .prof-details-item {
-    width: calc((100% - var(--prof-details-item-gap)) / 2);
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .prof-details-item {
+        width: calc((100% - var(--prof-details-item-gap)) / 2);
+    }
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 5px;
 }
 
 .footer-name {

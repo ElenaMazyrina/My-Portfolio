@@ -1,5 +1,12 @@
 .photo-card {
     position: relative;
+    margin: 0 44px;
+}
+
+@media (min-width: 600px) {
+    .photo-card {
+        margin: 0;
+    }
 }
 
 .photo-card-hat {
