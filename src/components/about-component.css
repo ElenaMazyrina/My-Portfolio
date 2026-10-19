@@ -49,15 +49,6 @@
 .header-name {
     border-radius: 0 0 0 110px;
     background-color: var(--color-yellow);
-    /*pop art*/
-    background-image: radial-gradient(
-            circle,
-            rgba(23, 23, 23, 0.25) 1px,
-            transparent 1.5px
-    );
-    background-size: 10px 10px;
-    background-repeat: repeat;
-
     font-size: clamp(4rem, 13vw, 9rem);
     font-style: normal;
     font-weight: 800;
@@ -225,4 +216,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+}
+
+.btw {
+    margin-top: 40px;
+    margin-bottom: 56px;
+    border-radius: 20px;
+    padding: 36px 36px 40px;
+    transition: background 0.35s ease;
+    background: var(--stack-bg);
+    color: var(--stack-ink);
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.75;
+}
+
+.btw-header {
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--stack-ink);
 }

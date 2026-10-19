@@ -29,10 +29,18 @@
             <h2 class="introduction-title">Привет!</h2>
             <img src="/My-Portfolio/wave.svg" alt="green decorative wave" />
             <p>
-                Меня зовут <b class="introduction-name">Елена</b>.
-                Более 6 лет работаю разработчиком и имею большой опыт создания и поддержки веб-приложений на Angular как для российского рынка, так и для зарубежного.
+                Меня зовут <b class="introduction-name">Лена</b>.
+                С 2017 года я пишу буковки и закорючки и потом радостно наблюдаю, как они превращаются в поля и кнопочки на веб-страницах.
             </p>
-            <p>Очень ❤️ Angular и слежу за активным развитием этого фреймворка.<br>Но с большим удовольствием изучаю и новые фреймворки, технологии, языки. </p>
+            <p>
+                Angular - мой ❤️любимый❤️ спутник. Веб-разработка - дело моей души, ради которого я оставила позади 9 лет работы в маркетинге.
+            </p>
+            <p>
+                В свободное от букво-закорючечных дел время я фотографирую, вместе с сыном леплю пластилиновые поезда и трамваи, пью кофе с булочками
+                и всегда мечтаю о каком-то номвом путешествии.
+            </p>
+
+
             <div class="contacts">
                 <app-contact [contactType]="contactTypeEnum.MAIL" contact="elena@frontend.dev" contactIcon="✉️" />
                 <app-contact [contactType]="contactTypeEnum.CLICK" contact="linkedin.com/in/elena-m" contactIcon="🔗" />
@@ -52,6 +60,16 @@
             <app-stack></app-stack>
         </div>
     </section>
+
+    <section class="btw">
+        <h3 class="btw-header">О проекте</h3>
+        Этот сайт я решила собрать на Astro в связке с Angular.
+        <b>Почему?</b>
+        Astro — любопытная современная технология, которую давно хотелось попробовать.
+        Но вдвойне интересно было посмотреть, как Astro уживется с Angular.
+        Все получилось, все работает)
+    </section>
+
     <div class="divider"></div>
     <section class="footer">
         <div class="footer-name">
@@ -67,6 +85,7 @@
             elena.mazyrina@gmail.com
         </div>
     </section>
+
     <app-toast></app-toast>
 </div>
 <app-theme-toggle class="theme-toggle"></app-theme-toggle>

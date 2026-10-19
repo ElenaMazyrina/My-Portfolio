@@ -11,6 +11,9 @@
     --color-muted: #c8c0b4;
     --toggle-dark-theme-btn-display: block;
     --toggle-light-theme-btn-display: none;
+    --stack-bg:#FAC800;
+    --stack-ink: #14100A;
+
 }
 
 :root[data-theme="dark"] {
@@ -25,6 +28,8 @@
     --color-muted: #38302A;
     --toggle-dark-theme-btn-display: none;
     --toggle-light-theme-btn-display: block;
+    --stack-bg:#1E1400;
+    --stack-ink:#FAC800;
 }
 
 :root {
