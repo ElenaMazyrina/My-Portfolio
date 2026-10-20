@@ -1,7 +1,6 @@
-import {Component, inject, input} from '@angular/core';
+import {Component, inject, input, type InputSignal} from '@angular/core';
 import {ContactTypeEnum} from "./ContactTypeEnum.ts";
 import {ToastService} from "../../services/toast-service.ts";
-import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +10,7 @@ import {CommonModule} from "@angular/common";
 })
 export class ContactComponent {
   contactType = input(ContactTypeEnum.COPY);
+  contactName: InputSignal<string> = input('');
   contact = input('');
   contactIcon = input('');
   private readonly toastService = inject(ToastService);

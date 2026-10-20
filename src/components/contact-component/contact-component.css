@@ -3,6 +3,7 @@
     align-items: baseline;
     justify-content: flex-start;
     gap: 10px;
+    cursor: pointer;
 }
 
 .contact-icon {

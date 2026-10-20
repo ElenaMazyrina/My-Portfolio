@@ -3,7 +3,6 @@ import {ThemeToggleComponent} from "./theme-toggle/theme-toggle-component.ts";
 import {ThemeService} from "../services/theme-service.ts";
 import {PillComponent} from "./pill-component/pill-component.ts";
 import {PillColorEnum} from "./pill-color-enum.ts";
-import {OutlinePillComponent} from "./outline-pill-component/outline-pill-component.ts";
 import {PhotoCardComponent} from "./photo-card-component/photo-card-component.ts";
 import {ContactComponent} from "./contact-component/contact-component.ts";
 import {ContactTypeEnum} from "./contact-component/ContactTypeEnum.ts";
@@ -11,6 +10,7 @@ import {ToastComponent} from "./toast-component/toast-component.ts";
 import {ProfExperienceSectionComponent} from "./prof-experience-section-component/prof-experience-section-component.ts";
 import {EducationComponent} from "./education-component/education-component.ts";
 import {StackComponent} from "./stack-component/stack-component.ts";
+import {SectionTitleComponent, SectionTitleStar} from "./section-title-component/section-title-component.ts";
 
 @Component({
     selector: 'app-about',
@@ -20,7 +20,7 @@ import {StackComponent} from "./stack-component/stack-component.ts";
     imports: [
         ThemeToggleComponent,
         PillComponent,
-        OutlinePillComponent,
+        SectionTitleComponent,
         PhotoCardComponent,
         ContactComponent,
         ToastComponent,
@@ -37,4 +37,6 @@ export class AboutComponent implements OnInit {
     ngOnInit(): void {
         this.themeService.init();
     }
+
+    protected readonly sectionTitleStar = SectionTitleStar;
 }

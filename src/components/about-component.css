@@ -222,7 +222,7 @@
     margin-top: 40px;
     margin-bottom: 56px;
     border-radius: 20px;
-    padding: 36px 36px 40px;
+    padding: 22px 36px 40px;
     transition: background 0.35s ease;
     background: var(--stack-bg);
     color: var(--stack-ink);

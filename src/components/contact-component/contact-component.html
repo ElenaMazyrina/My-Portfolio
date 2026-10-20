@@ -2,8 +2,8 @@
     <div class="contact-icon">{{ contactIcon() }}</div>
     @switch (contactType()) {
         @case (contactTypeEnum.CLICK) {
-            <a [href]="contact()">
-                {{ contact() }}
+            <a target="_blank" [href]="contact()">
+                {{ contactName() ? contactName() : contact() }}
             </a>
         }
         @case (contactTypeEnum.MAIL) {

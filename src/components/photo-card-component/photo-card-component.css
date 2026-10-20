@@ -2,6 +2,7 @@
     width: 206px;
     position: relative;
     margin: 0 44px;
+    opacity: var(--photo-card-opacity);
 }
 
 @media (min-width: 600px) {
@@ -19,7 +20,6 @@
 .photo-block {
     overflow: hidden;
     z-index: 1;
-
     display: flex;
     position: relative;
     flex-direction: column;

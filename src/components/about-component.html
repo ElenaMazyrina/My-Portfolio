@@ -17,13 +17,10 @@
             </div>
             <div class="header-surname">Мазырина</div>
         </h1>
-        <div class="header-intro">
-        </div>
-
-
-
     </section>
+
     <div class="divider"></div>
+
     <section class="introduction">
         <div class="introduction-text">
             <h2 class="introduction-title">Привет!</h2>
@@ -37,14 +34,13 @@
             </p>
             <p>
                 В свободное от букво-закорючечных дел время я фотографирую, вместе с сыном леплю пластилиновые поезда и трамваи, пью кофе с булочками
-                и всегда мечтаю о каком-то номвом путешествии.
+                и всегда мечтаю о каком-то новом путешествии.
             </p>
-
 
             <div class="contacts">
                 <app-contact [contactType]="contactTypeEnum.MAIL" contact="elena@frontend.dev" contactIcon="✉️" />
-                <app-contact [contactType]="contactTypeEnum.CLICK" contact="linkedin.com/in/elena-m" contactIcon="🔗" />
-                <app-contact contact="github.com/elena-dev" contactIcon="🐙" />
+                <app-contact [contactType]="contactTypeEnum.CLICK" contact="https://www.linkedin.com/in/elena-mazyrina-41a00599/" contactIcon="🔗" contactName="linkedin.com/in/elena-mazyrina-41a00599"/>
+                <app-contact [contactType]="contactTypeEnum.CLICK" contact="https://github.com/ElenaMazyrina" contactIcon="🐙" contactName="github.com/ElenaMazyrina" />
                 <app-contact contact="@elenaMazyrina" contactIcon="✍️" />
             </div>
         </div>
@@ -52,7 +48,9 @@
             <app-photo-card></app-photo-card>
         </div>
     </section>
+
     <div class="divider"></div>
+
     <section class="prof-details">
         <app-prof-experience-section class="prof-details-item" />
         <div class="prof-details-item">
@@ -62,15 +60,17 @@
     </section>
 
     <section class="btw">
-        <h3 class="btw-header">О проекте</h3>
+        <app-section-title [star]="sectionTitleStar.BLUE" titleText="О проекте"></app-section-title>
         Этот сайт я решила собрать на Astro в связке с Angular.
+        <br />
         <b>Почему?</b>
-        Astro — любопытная современная технология, которую давно хотелось попробовать.
-        Но вдвойне интересно было посмотреть, как Astro уживется с Angular.
-        Все получилось, все работает)
+        Было интересно потрогать Astro, и еще интереснее проверить, как они уживаются с Angular.
+        <br />
+        Можно было сделать и проще, но захотелось именно так.
     </section>
 
     <div class="divider"></div>
+
     <section class="footer">
         <div class="footer-name">
             <img src="/My-Portfolio/green-star-12.svg" alt="green decorative star" />

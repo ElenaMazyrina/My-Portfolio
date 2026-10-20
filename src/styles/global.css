@@ -13,6 +13,7 @@
     --toggle-light-theme-btn-display: none;
     --stack-bg:#FAC800;
     --stack-ink: #14100A;
+    --photo-card-opacity: 1;
 
 }
 
@@ -30,6 +31,7 @@
     --toggle-light-theme-btn-display: block;
     --stack-bg:#1E1400;
     --stack-ink:#FAC800;
+    --photo-card-opacity: 0.8;
 }
 
 :root {
