@@ -43,6 +43,10 @@
     line-height: 21px;
 }
 
+.responsibility-item-main {
+    color: var(--color-ink);
+}
+
 .responsibility-item + .responsibility-item {
     margin-top: 10px;
 }

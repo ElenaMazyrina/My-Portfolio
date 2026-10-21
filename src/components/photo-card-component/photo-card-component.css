@@ -1,13 +1,38 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .photo-card {
-    width: 206px;
+    width: 185px;
     position: relative;
-    margin: 0 44px;
     opacity: var(--photo-card-opacity);
 }
 
 @media (min-width: 600px) {
     .photo-card {
-        margin: 0;
+        width: 206px;
+    }
+}
+
+.photo-card-text-container {
+    display: none;
+}
+
+.photo-card-text-container-mobile {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media (min-width: 600px) {
+    .photo-card-text-container {
+        display: block;
+    }
+
+    .photo-card-text-container-mobile {
+        display: none;
     }
 }
 
@@ -31,6 +56,7 @@
 
 .photo-card-img {
     display: block;
+    width: 206px;
 }
 
 .photo-back {
