@@ -10,6 +10,4 @@ import {NgTemplateOutlet} from "@angular/common";
   styleUrl: './photo-card-component.css',
   standalone: true,
 })
-export class PhotoCardComponent {
-
-}
+export class PhotoCardComponent {}
